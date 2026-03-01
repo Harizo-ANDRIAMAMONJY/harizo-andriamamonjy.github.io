@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harizo ANDRIAMAMONJY - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- LOADER ANIMÉ -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">Harizo</div>
+    </div>
+
+    <!-- PARTICULES DE FOND -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">A.H<span class="logo-dot">.</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ACCUEIL -->
+    <section id="accueil" class="section">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-badge animate-pop-in">⚡Tongasoa⚡<br>⚡Bienvenue⚡<br>⚡welcome⚡</div>
+                <h1 class="hero-title animate-slide-up">
+                    <span class="title-line">ANDRIAMAMONJY</span>
+                    <span class="title-line">HARIZO</span>
+                </h1>
+                <h2 class="hero-subtitle animate-slide-up delay-1">
+                    <span class="typed-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description animate-slide-up delay-2">
+                    Bac 2025 • L1 Informatique • Électronique • Programmation
+                </p>
+                <div class="hero-buttons animate-slide-up delay-3">
+                    <a href="#projets" class="btn btn-primary">
+                        <span>Voir mes projets</span>
+                        <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M12 4v16M4 12h16" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Me contacter</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Découvrir</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- À PROPOS AVEC PHOTO -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">À propos de moi</h2>
+            <div class="about-content">
+                <!-- Photo avec animations -->
+                <div class="profile-wrapper reveal-left">
+                    <div class="profile-frame">
+                        <div class="profile-border"></div>
+                        <!-- REMPLACEZ CETTE URL PAR VOTRE VRAIE PHOTO -->
+                        <img src="harizo.jpg" alt="Harizo" class="profile-img">
+                        <div class="profile-overlay">
+                            <span>Harizo</span>
+                        </div>
+                    </div>
+                    <div class="profile-badges">
+                        <span class="badge badge-1">🎓 Bac 2025</span>
+                        <span class="badge badge-2">💻 L1 Info</span>
+                        <span class="badge badge-3">⚡ Électronique</span>
+                    </div>
+                </div>
+                
+                <!-- Texte avec animations -->
+                <div class="about-text reveal-right">
+                    <p class="intro">👋 Bonjour ! Je m'appelle Harizo.</p>
+                    <p>Passionné par l'informatique et l'électronique, je crée des projets qui mélangent le code et le matériel. J'aime particulièrement travailler avec Arduino et développer des sites web.Mon objectif est de maîtriser le domaine de l'informatique et le robotique afin de concevoir des projets destiné pour la technologie actuel et pour le future</p>
+                    <p class="highlight">Actuellement en Licence 1 d'Informatique, je recherche un stage pour mettre en pratique mes compétences.</p>
+                    
+                    <h3>Compétences techniques</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" 
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="70">
+                            <span class="skill-name">Électronique</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-tags">
+                        
+                        
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Arduino</span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Mes projets</h2>
+            <div class="projects-filter reveal">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="electronique">Électronique</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="iot">IoT</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card" data-category="electronique">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-badge">📟 Arduino</div>
+                            <h3>Feu tricolore</h3>
+                            <p>Montage Arduino avec LEDs simulant un feu de circulation.</p>
+                            <div class="card-tech">
+                                <span>Arduino</span>
+                                <span>C++</span>
+                                <span>LEDs</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Détails du projet</h4>
+                            <p>Cycle automatique de 10 secondes avec gestion précise des temporisations.</p>
+                            <button class="card-btn" onclick="alert('Code disponible sur GitHub')">Voir le code</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card" data-category="web">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-badge">🌐 Web</div>
+                            <h3>Portfolio</h3>
+                            <p>Site responsive avec animations CSS et JavaScript.</p>
+                            <div class="card-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JS</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Détails du projet</h4>
+                            <p>Design moderne, animations fluides, filtres de projets et formulaire de contact.</p>
+                            <button class="card-btn" onclick="window.location.reload()">Voir en direct</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card" data-category="iot electronique">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-badge">⚡ IoT</div>
+                            <h3>Station météo</h3>
+                            <p>Capteur température/humidité avec affichage LCD.</p>
+                            <div class="card-tech">
+                                <span>Arduino</span>
+                                <span>DHT11</span>
+                                <span>LCD</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Détails du projet</h4>
+                            <p>Mesure en temps réel de la température et de l'humidité avec affichage sur écran LCD.</p>
+                            <button class="card-btn" onclick="alert('Projet en développement')">En cours</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Me contacter</h2>
+            <div class="contact-container">
+                <div class="contact-info reveal-left">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <div class="contact-label">Email</div>
+                            <a href="mailto:harizo.andria@email.com" class="contact-value">harizoandriamamonjy44@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">☎️</div>
+                        <div>
+                            <div class="contact-label">Téléphone</div>
+                            <span class="phone-hidden" onclick="revealPhone()">🔒 Cliquer pour voir</span>
+                        </div>
+                    </div>
+                    
+                    <!-- NOUVEAU : Facebook -->
+                    <div class="contact-item">
+                        <div class="contact-icon">ⓕ</div>
+                        <div>
+                            <div class="contact-label">Facebook</div>
+                            <a href="https://facebook.com/harizo.harizoandriamaonjy" target="_blank" class="contact-value">
+                                @harizo.harizoandriamaonjy
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- NOUVEAU : WhatsApp -->
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <div class="contact-label">WhatsApp</div>
+                            <a href="https://wa.me/261381810711" target="_blank" class="contact-value whatsapp-link">
+                                +261 38 18 107 11
+                            </a>
+                            <span class="contact-note">(Cliquez pour discuter)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🔗</div>
+                        <div>
+                            <div class="contact-label">LinkedIn</div>
+                            <a href="#" onclick="alert('Profil LinkedIn à créer')">linkedin.com/in/harizo</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">💻</div>
+                        <div>
+                            <div class="contact-label">GitHub</div>
+                            <a href="#" onclick="alert('Profil GitHub à créer')">github.com/harizo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire avec animation -->
+                <form class="contact-form reveal-right" id="contactForm">
+                    <h3>Envoyer un message</h3>
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Votre nom</label>
+                        <span class="form-line"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Votre email</label>
+                        <span class="form-line"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" rows="4" required></textarea>
+                        <label for="message">Votre message</label>
+                        <span class="form-line"></span>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span>Envoyer</span>
+                        <svg class="send-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M2 21L23 12L2 3L2 10L15 12L2 14L2 21Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p class="footer-text">© 2026 Harizo ANDRIAMAONJY</p>
+            <p class="footer-small">⚡ Bac 2025 • L1 Informatique • Passionné d'électronique ⚡</p>
+            <div class="footer-social">
+                <a href="https://facebook.com/harizo.harizoandriamaonjy" target="_blank" class="social-link">📘</a>
+                <a href="https://wa.me/261381810711" target="_blank" class="social-link">📱</a>
+                <a href="#" class="social-link" onclick="alert('LinkedIn à créer')">🔗</a>
+                <a href="#" class="social-link" onclick="alert('GitHub à créer')">💻</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
